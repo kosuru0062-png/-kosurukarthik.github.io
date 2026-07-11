@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Kosuru Karthik</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skill</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Kosuru Karthik</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>Multidisciplinary professional with 3+ years in Web Design and VLSI Engineering.</p>
+            <div class="home-sci">
+                <a href="https://facebook.com/yourusername" target="_blank"><i class=" bxl-facebook"></i></a>
+                <a href="https://instagram.com/zen_karthiknaidu" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a href="https://wa.me/919398394847" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://linkedin.com/in/kosuru-karthik-100a46323" target="_blank"><i class="bx bxl-linkedin"</i></a>
+            </div>
+            <a href="#about" class="btn-box">More About Me</a>
+        </div>
+        <div class="home-image">
+            <img src="images/karthik old.jpeg" alt="Kosuru Karthik" />
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <h3>Kosuru Karthik – VLSI Engineer &amp; Web Designer</h3>
+            <p>M.Tech VLSI student at KL University with expertise in digital design, RISC-V, and low-power optimization.</p>
+            <p>3+ years in Web Design and Frontend Development, bridging hardware and user interfaces.</p>
+            <div class="about-info">
+                <div class="info-item"><span>Name:</span> Kosuru Karthik</div>
+                <div class="info-item"><span>Email:</span> kosuru0062@gmail.com</div>
+                <div class="info-item"><span>Phone:</span> +91 9398394847</div>
+                <div class="info-item"><span>Education:</span> M.Tech VLSI</div>
+                <div class="info-item"><span>Experience:</span> 3+ Years</div>
+                <div class="info-item"><span>Location:</span> Vizag / Tenali</div>
+            </div>
+            <a href="#" class="btn-box">Download CV</a>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skill" class="skill">
+        <div class="section-content">
+            <h2>My Skills</h2>
+            <div class="skill-container">
+                <div class="skill-box">
+                    <h3>Web Design</h3>
+                    <div class="skill-item"><span>HTML/CSS</span><div class="skill-bar"><div class="skill-fill" style="width:95%">95%</div></div></div>
+                    <div class="skill-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="width:85%">85%</div></div></div>
+                    <div class="skill-item"><span>React.js</span><div class="skill-bar"><div class="skill-fill" style="width:75%">75%</div></div></div>
+                    <div class="skill-item"><span>UI/UX</span><div class="skill-bar"><div class="skill-fill" style="width:80%">80%</div></div></div>
+                </div>
+                <div class="skill-box">
+                    <h3>VLSI &amp; Hardware</h3>
+                    <div class="skill-item"><span>Verilog / VHDL</span><div class="skill-bar"><div class="skill-fill" style="width:90%">90%</div></div></div>
+                    <div class="skill-item"><span>RISC-V</span><div class="skill-bar"><div class="skill-fill" style="width:85%">85%</div></div></div>
+                    <div class="skill-item"><span>Xilinx Vivado</span><div class="skill-bar"><div class="skill-fill" style="width:88%">88%</div></div></div>
+                    <div class="skill-item"><span>FPGA</span><div class="skill-bar"><div class="skill-fill" style="width:80%">80%</div></div></div>
+                </div>
+                <div class="skill-box">
+                    <h3>Tools</h3>
+                    <div class="skill-item"><span>Git / GitHub</span><div class="skill-bar"><div class="skill-fill" style="width:85%">85%</div></div></div>
+                    <div class="skill-item"><span>Python</span><div class="skill-bar"><div class="skill-fill" style="width:80%">80%</div></div></div>
+                    <div class="skill-item"><span>MATLAB</span><div class="skill-bar"><div class="skill-fill" style="width:75%">75%</div></div></div>
+                    <div class="skill-item"><span>LaTeX</span><div class="skill-bar"><div class="skill-fill" style="width:90%">90%</div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-content">
+            <h2>My Projects</h2>
+
+            <!-- PROJECT 1 -->
+            <div class="project-card">
+                <h3>Low-Power RISC-V SoC</h3>
+                <p>32-bit RISC-V processor with enable-based clock gating achieving 50% ALU power reduction.</p>
+                <span class="project-tech">Verilog | Vivado | Artix-7</span>
+                <button class="view-btn" onclick="toggleProject('proj1')">▼ View Details</button>
+
+                <div id="proj1" class="project-details" style="display:none;">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Enable-based clock gating (alu_enable, mem_enable, regfile_enable)</li>
+                        <li>50% ALU logic power reduction (0.002W → 0.001W)</li>
+                        <li>Secure reconfigurable UART with LFSR encryption</li>
+                        <li>Runtime mode switching: Plaintext ↔ Encrypted</li>
+                        <li>Complete SoC: 127 LUTs, 89 flip-flops</li>
+                    </ul>
+                    <h4>Technologies</h4>
+                    <p>
+                        <span class="highlight">Verilog HDL</span>
+                        <span class="highlight">Xilinx Vivado</span>
+                        <span class="highlight">Artix-7 FPGA</span>
+                        <span class="highlight">LFSR</span>
+                    </p>
+                    <h4>Key Results</h4>
+                    <ul>
+                        <li>50% ALU power reduction</li>
+                        <li>61.3% frequency improvement (143.2 → 231.0 MHz)</li>
+                        <li>87.9% setup slack improvement (3.018 → 5.671 ns)</li>
+                        <li>127 LUTs, 89 FFs (&lt;1% of Artix-7)</li>
+                    </ul>
+                    <h4>Publications</h4>
+                    <div class="paper">
+                        <p><strong>Low Power Optimization Techniques in RISC-V Architecture Using Clock Gating</strong></p>
+                        <p>Status: Under Preparation | Target: IEEE Conference</p>
+                    </div>
+                    <div class="paper">
+                        <p><strong>Low-Power RISC-V SoC with Secure Reconfigurable UART</strong></p>
+                        <p>Status: Under Preparation | Target: IEEE/Springer Conference</p>
+                    </div>
+                    <button class="view-btn" onclick="toggleProject('proj1')">▲ Hide Details</button>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-card">
+                <h3>Secure Reconfigurable UART</h3>
+                <p>UART with LFSR-based stream cipher encryption. Zero latency, 15 LUTs, 100% accuracy.</p>
+                <span class="project-tech">Verilog | LFSR | Vivado</span>
+                <button class="view-btn" onclick="toggleProject('proj2')">▼ View Details</button>
+
+                <div id="proj2" class="project-details" style="display:none;">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>8-bit LFSR with polynomial x⁸ + x⁶ + x⁵ + x⁴ + 1</li>
+                        <li>Zero latency overhead (XOR is combinational)</li>
+                        <li>Mode switch in 1 clock cycle (20 ns at 50 MHz)</li>
+                        <li>100% accuracy across 4 test cases</li>
+                        <li>15 LUTs, 10 flip-flops per LFSR instance</li>
+                    </ul>
+                    <h4>Technologies</h4>
+                    <p>
+                        <span class="highlight">Verilog HDL</span>
+                        <span class="highlight">Xilinx Vivado</span>
+                        <span class="highlight">LFSR</span>
+                    </p>
+                    <h4>Key Results</h4>
+                    <ul>
+                        <li>15 LUTs, 10 flip-flops per LFSR instance</li>
+                        <li>96.5% area reduction vs AES-128</li>
+                        <li>Zero latency overhead</li>
+                        <li>100% functional accuracy</li>
+                    </ul>
+                    <h4>Publications</h4>
+                    <div class="paper">
+                        <p><strong>Secure Reconfigurable UART with LFSR Encryption</strong></p>
+                        <p>Status: Under Preparation | Target: Springer Conference</p>
+                    </div>
+                    <button class="view-btn" onclick="toggleProject('proj2')">▲ Hide Details</button>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-card">
+                <h3>SoC-SecureUART</h3>
+                <p>Multi-layer secure RISC-V SoC with PUF, Crypto, TEE, and IOMMU isolation.</p>
+                <span class="project-tech">Verilog | PUF | AES | Keccak</span>
+                <button class="view-btn" onclick="toggleProject('proj3')">▼ View Details</button>
+
+                <div id="proj3" class="project-details" style="display:none;">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Layer 1: PUF-based Secure Boot (64-bit RO-PUF)</li>
+                        <li>Layer 2: Cryptographic Acceleration (Keccak, DOM-AES)</li>
+                        <li>Layer 3: Trusted Execution Environment (PMP, enclaves)</li>
+                        <li>Layer 4: IOMMU DMA Isolation</li>
+                        <li>3 security modes: Plain, Rolling Code, Challenge-Response</li>
+                    </ul>
+                    <h4>Technologies</h4>
+                    <p>
+                        <span class="highlight">Verilog HDL</span>
+                        <span class="highlight">RO-PUF</span>
+                        <span class="highlight">DOM-AES</span>
+                        <span class="highlight">Keccak</span>
+                        <span class="highlight">IOMMU</span>
+                    </p>
+                    <h4>Key Results</h4>
+                    <ul>
+                        <li>3,654 LUTs (35.1%), 2,138 flip-flops (10.3%)</li>
+                        <li>Max frequency: 83.2 MHz</li>
+                        <li>Total power: 40.2 mW</li>
+                        <li>PUF uniqueness: 47.3%, Reliability: 96.8%</li>
+                    </ul>
+                    <h4>Publications</h4>
+                    <div class="paper">
+                        <p><strong>SoC-SecureUART: Multi-Layer Hardware Security for RISC-V</strong></p>
+                        <p>Status: Under Preparation | Target: IEEE Conference</p>
+                    </div>
+                    <button class="view-btn" onclick="toggleProject('proj3')">▲ Hide Details</button>
+                </div>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive portfolio showcasing VLSI and web development skills.</p>
+                <span class="project-tech">HTML | CSS | JavaScript</span>
+                <button class="view-btn" onclick="toggleProject('proj4')">▼ View Details</button>
+
+                <div id="proj4" class="project-details" style="display:none;">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li>Modern responsive dark theme</li>
+                        <li>Typing animation for roles</li>
+                        <li>Skills with progress bars</li>
+                        <li>Expandable project details</li>
+                        <li>Contact form with validation</li>
+                    </ul>
+                    <h4>Technologies</h4>
+                    <p>
+                        <span class="highlight">HTML5</span>
+                        <span class="highlight">CSS3</span>
+                        <span class="highlight">JavaScript</span>
+                        <span class="highlight">Boxicons</span>
+                    </p>
+                    <h4>Key Results</h4>
+                    <ul>
+                        <li>Fully responsive on all devices</li>
+                        <li>Smooth animations and navigation</li>
+                        <li>Interactive project details</li>
+                    </ul>
+                    <button class="view-btn" onclick="toggleProject('proj4')">▲ Hide Details</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="bx bx-envelope"></i>
+                    <h4>Email</h4>
+                    <p>kosuru0062@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="bx bx-phone"></i>
+                    <h4>Phone</h4>
+                    <p>+91 9398394847</p>
+                </div>
+                <div class="contact-item">
+                    <i class="bx bx-map"></i>
+                    <h4>Location</h4>
+                    <p>Vizag / Tenali, India</p>
+                </div>
+                <div class="contact-item">
+                    <i class="bx bxl-linkedin"></i>
+                    <h4>LinkedIn</h4>
+                    <p>linkedin.com/in/kosuru-karthik</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-box">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
